@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Gift, Heart, Copy, Check } from 'lucide-react';
+import { Sparkles, Copy, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Card } from '@/components/ui/card';
@@ -27,27 +27,28 @@ const DonationDialog = () => {
     <Dialog>
       <DialogTrigger asChild>
         <Button 
-          className="fixed bottom-6 right-6 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-full p-4 shadow-2xl z-50"
+          className="fixed bottom-6 right-6 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-full p-4 shadow-xl z-50"
+          aria-label="Make a donation"
         >
-          <Gift className="w-6 h-6" />
+          <Sparkles className="w-6 h-6" />
         </Button>
       </DialogTrigger>
       <DialogContent className="max-w-md bg-gradient-to-br from-amber-50 to-orange-50 border-amber-200">
         <DialogHeader>
           <DialogTitle className="text-amber-800 text-center">
-            صدقہ و خیرات - Donation
+            Support Islamic Education
           </DialogTitle>
         </DialogHeader>
         
         <div className="space-y-6">
           <Card className="p-4 bg-white/70 border-amber-200">
             <div className="text-center">
-              <Heart className="w-8 h-8 text-amber-600 mx-auto mb-3" />
+              <Sparkles className="w-8 h-8 text-amber-600 mx-auto mb-3" />
               <h3 className="font-semibold text-amber-800 mb-2">
-                اس نیک کام میں تعاون کریں
+                Support This Noble Cause
               </h3>
               <p className="text-sm text-amber-700">
-                آپ کا صدقہ اس روحانی پلیٹ فارم کو بہتر بنانے میں مدد کرے گا
+                Your sadaqah helps maintain this Islamic spiritual guidance platform
               </p>
             </div>
           </Card>
@@ -61,6 +62,7 @@ const DonationDialog = () => {
                   size="sm"
                   onClick={() => copyToClipboard(upiId, 'upi')}
                   className="bg-emerald-500 hover:bg-emerald-600"
+                  aria-label="Copy UPI ID"
                 >
                   {copiedUPI ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                 </Button>
@@ -75,6 +77,7 @@ const DonationDialog = () => {
                   size="sm"
                   onClick={() => copyToClipboard(accountDetails, 'account')}
                   className="bg-blue-500 hover:bg-blue-600"
+                  aria-label="Copy bank details"
                 >
                   {copiedAccount ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                 </Button>
@@ -84,7 +87,7 @@ const DonationDialog = () => {
 
           <Card className="p-4 bg-green-50 border-green-200 text-center">
             <p className="text-sm text-green-700">
-              <strong>جزاک اللہ خیراً</strong><br />
+              <strong>Jazakallahu Khairan</strong><br />
               May Allah reward you for your generosity
             </p>
           </Card>

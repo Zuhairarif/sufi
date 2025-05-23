@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Teachings from "./pages/Teachings";
 import Guidance from "./pages/Guidance";
 import Profile from "./pages/Profile";
+import Dhikr from "./pages/Dhikr";
+import Duas from "./pages/Duas";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/teachings" element={<Teachings />} />
           <Route path="/guidance" element={<Guidance />} />
+          <Route path="/dhikr" element={<Dhikr />} />
+          <Route path="/duas" element={<Duas />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
