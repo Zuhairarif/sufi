@@ -8,7 +8,7 @@ import DonationDialog from '@/components/DonationDialog';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { BookOpen, Crescent, User, Heart, Star, Sparkles } from 'lucide-react';
+import { BookOpen, Moon, User, Heart, Star, Sparkles } from 'lucide-react';
 
 const Index = () => {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
@@ -50,7 +50,7 @@ const Index = () => {
                 onClick={() => setIsChatbotOpen(true)}
                 className="group bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white px-10 py-6 text-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-emerald-400/30 hover:border-emerald-300/50"
               >
-                <Crescent className="w-6 h-6 mr-3 group-hover:animate-pulse" />
+                <Moon className="w-6 h-6 mr-3 group-hover:animate-pulse" />
                 روحانی سفر شروع کریں
                 <Sparkles className="w-5 h-5 ml-2 opacity-70" />
               </Button>
@@ -84,7 +84,7 @@ const Index = () => {
 
               <Card className="group bg-white/5 backdrop-blur-lg border border-teal-400/20 p-8 text-white hover:bg-white/10 transition-all duration-500 transform hover:scale-105 hover:border-teal-300/40 rounded-3xl">
                 <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse">
-                  <Crescent className="w-8 h-8 text-white" />
+                  <Moon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-teal-200">صوفیانہ مکالمہ</h3>
                 <p className="text-teal-100/90 leading-relaxed">ذکر، فنا، بقا، اور وحدت کے راستے پر گہری گفتگو میں شامل ہوں۔</p>

@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Crescent, Send, User, X } from 'lucide-react';
+import { Moon, Send, User, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
@@ -85,7 +84,7 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
         <DialogHeader className="border-b border-emerald-200 pb-4">
           <DialogTitle className="flex items-center space-x-3 text-emerald-800">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-full flex items-center justify-center">
-              <Crescent className="w-5 h-5 text-white" />
+              <Moon className="w-5 h-5 text-white" />
             </div>
             <div>
               <h3 className="text-xl font-semibold">روحانی رہنما - Spiritual Guide</h3>
@@ -110,7 +109,7 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
                   {message.sender === 'user' ? (
                     <User className="w-4 h-4 text-white" />
                   ) : (
-                    <Crescent className="w-4 h-4 text-white" />
+                    <Moon className="w-4 h-4 text-white" />
                   )}
                 </div>
                 <Card className={`p-3 ${
@@ -131,7 +130,7 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
             <div className="flex justify-start">
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-full flex items-center justify-center">
-                  <Crescent className="w-4 h-4 text-white" />
+                  <Moon className="w-4 h-4 text-white" />
                 </div>
                 <Card className="p-3 bg-white/80 border-emerald-200">
                   <div className="flex space-x-1">

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Crescent, Phone, Mail, MessageCircle } from 'lucide-react';
+import { Moon, Phone, Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -20,7 +19,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-cyan-500 rounded-xl flex items-center justify-center">
-                <Crescent className="text-white w-5 h-5" />
+                <Moon className="text-white w-5 h-5" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-emerald-300">Hidayat-e-Ruhani</h3>

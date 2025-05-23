@@ -1,10 +1,9 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
-import { BookOpen, Star, Heart, Crescent } from 'lucide-react';
+import { BookOpen, Star, Heart, Moon } from 'lucide-react';
 
 const Teachings = () => {
   const sufiMasters = [
@@ -119,7 +118,7 @@ const Teachings = () => {
               {concepts.map((concept, index) => (
                 <Card key={index} className="bg-white/5 backdrop-blur-lg border border-cyan-400/20 p-6 text-white hover:bg-white/10 transition-all duration-300 rounded-2xl text-center">
                   <div className="mb-4">
-                    <Crescent className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
+                    <Moon className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
                     <h3 className="text-2xl font-bold text-emerald-300 mb-1">{concept.arabic}</h3>
                     <h4 className="text-lg text-cyan-300">{concept.term}</h4>
                     <p className="text-emerald-200 text-sm">{concept.urdu}</p>

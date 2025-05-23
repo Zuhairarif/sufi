@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { User, Crescent, Star, BookOpen, Heart, Edit } from 'lucide-react';
+import { User, Moon, Star, BookOpen, Heart, Edit } from 'lucide-react';
 
 const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -28,7 +28,7 @@ const Profile = () => {
   ];
 
   const achievements = [
-    { icon: Crescent, title: "پہلا ذکر", subtitle: "First Dhikr", earned: true },
+    { icon: Moon, title: "پہلا ذکر", subtitle: "First Dhikr", earned: true },
     { icon: BookOpen, title: "طالب علم", subtitle: "Student", earned: true },
     { icon: Heart, title: "محبت", subtitle: "Love", earned: false },
     { icon: Star, title: "ہدایت", subtitle: "Guidance", earned: false }

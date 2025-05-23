@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import AnimatedBackground from '@/components/AnimatedBackground';
@@ -6,7 +5,7 @@ import Footer from '@/components/Footer';
 import SpiritualChatbot from '@/components/SpiritualChatbot';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Crescent, Heart, Star, BookOpen, MessageCircle } from 'lucide-react';
+import { Moon, Heart, Star, BookOpen, MessageCircle } from 'lucide-react';
 
 const Guidance = () => {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
@@ -30,7 +29,7 @@ const Guidance = () => {
       title: "ذکر کی طاقت",
       subtitle: "Power of Dhikr",
       description: "اللہ کی یاد کے ذریعے دل میں سکون اور روح میں امن حاصل کریں",
-      icon: Crescent,
+      icon: Moon,
       color: "from-cyan-400 to-blue-500"
     },
     {
@@ -132,7 +131,7 @@ const Guidance = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-emerald-500 rounded-full flex items-center justify-center">
-                        <Crescent className="w-6 h-6 text-white" />
+                        <Moon className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-emerald-300">{practice.time}</h3>
@@ -152,7 +151,7 @@ const Guidance = () => {
           <section>
             <Card className="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 backdrop-blur-lg border border-emerald-400/30 p-12 text-white rounded-3xl text-center">
               <div className="max-w-3xl mx-auto">
-                <Crescent className="w-16 h-16 text-emerald-400 mx-auto mb-6" />
+                <Moon className="w-16 h-16 text-emerald-400 mx-auto mb-6" />
                 <h2 className="text-3xl font-bold text-emerald-300 mb-4">
                   ذاتی مشاورت - Personal Consultation
                 </h2>
