@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { MessageCircle, Send, User, Bot, X } from 'lucide-react';
+import { Crescent, Send, User, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
@@ -22,7 +22,7 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      content: 'Assalamu alaikum, dear seeker. I am your spiritual guide on this sacred journey. How may I assist you in finding divine wisdom today?',
+      content: 'السلام علیکم، عزیز طالب۔ میں آپ کے اس مقدس سفر میں آپ کا روحانی رہنما ہوں۔ آج آپ کو کس طرح کی الٰہی حکمت کی ضرورت ہے؟\n\nAssalamu alaikum, dear seeker. I am your spiritual guide on this sacred journey. What divine wisdom do you seek today?',
       sender: 'ai',
       timestamp: new Date()
     }
@@ -31,16 +31,16 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
   const [isLoading, setIsLoading] = useState(false);
 
   const spiritualResponses = [
-    "The path to the Divine is through purification of the heart. What burdens your soul today, beloved seeker?",
-    "In Sufism, we learn that Allah is closer to you than your jugular vein. Turn inward and listen to the silence within.",
-    "Remember the words of Rumi: 'Let yourself be silently drawn by the strange pull of what you really love. It will not lead you astray.' What calls to your spirit?",
-    "The greatest jihad is the struggle against the nafs (ego). What aspects of yourself are you working to transcend?",
-    "In our tradition, we say 'Die before you die.' This means to let go of worldly attachments and find your true essence. What prevents you from this surrender?",
-    "The Beloved speaks to us through every experience. What signs have you noticed in your life recently?",
-    "Dhikr (remembrance of Allah) is the polish of the heart. How do you maintain your connection to the Divine throughout your day?",
-    "Every difficulty contains within it the seeds of spiritual growth. What challenges are teaching you about yourself?",
-    "The mystic sees unity where others see separation. How can you cultivate this vision of wahdat (oneness) in your daily life?",
-    "Patience (sabr) is the companion of wisdom. In what areas of your life are you being called to practice deeper patience?"
+    "الٰہی سے قربت کا راستہ دل کی پاکیزگی سے گزرتا ہے۔ آج آپ کے دل پر کیا بوجھ ہے، عزیز طالب؟",
+    "تصوف میں ہم سیکھتے ہیں کہ اللہ آپ کی رگ جان سے بھی زیادہ قریب ہے۔ اندر کی طرف متوجہ ہوں اور اپنے اندر کی خاموشی سنیں۔",
+    "رومی کے الفاظ یاد رکھیں: 'اپنے آپ کو اس چیز کی عجیب کشش کے حوالے کر دو جس سے آپ واقعی محبت کرتے ہیں۔' آپ کی روح کو کیا پکارتا ہے؟",
+    "سب سے بڑا جہاد نفس کے خلاف جدوجہد ہے۔ آپ اپنے کن پہلووں پر قابو پانے کی کوشش کر رہے ہیں؟",
+    "ہماری روایت میں کہا گیا ہے 'مرنے سے پہلے مر جاؤ۔' اس کا مطلب دنیاوی تعلقات کو چھوڑ کر اپنی حقیقی ذات کو تلاش کرنا ہے۔",
+    "محبوب ہمارے ہر تجربے کے ذریعے ہم سے بات کرتا ہے۔ آپ نے حال ہی میں اپنی زندگی میں کیا نشانیاں دیکھی ہیں؟",
+    "ذکر (اللہ کی یاد) دل کا جلا ہے۔ آپ اپنے دن بھر میں الٰہی سے کیسے رابطہ برقرار رکھتے ہیں؟",
+    "ہر مشکل اپنے اندر روحانی ترقی کے بیج رکھتی ہے۔ کون سے چیلنجز آپ کو اپنے بارے میں سکھا رہے ہیں؟",
+    "صوفی وہاں وحدت دیکھتا ہے جہاں دوسرے تفریق دیکھتے ہیں۔ آپ اپنی روزمرہ زندگی میں اس وحدت کی نظر کیسے پیدا کر سکتے ہیں؟",
+    "صبر حکمت کا ساتھی ہے۔ آپ کی زندگی کے کن علاقوں میں آپ کو گہرے صبر کی مشق کی ضرورت ہے؟"
   ];
 
   const handleSendMessage = async () => {
@@ -57,7 +57,6 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
     setInputMessage('');
     setIsLoading(true);
 
-    // Simulate AI response with spiritual guidance
     setTimeout(() => {
       const randomResponse = spiritualResponses[Math.floor(Math.random() * spiritualResponses.length)];
       
@@ -86,11 +85,11 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
         <DialogHeader className="border-b border-emerald-200 pb-4">
           <DialogTitle className="flex items-center space-x-3 text-emerald-800">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-full flex items-center justify-center">
-              <MessageCircle className="w-5 h-5 text-white" />
+              <Crescent className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h3 className="text-xl font-semibold">Spiritual AI Guide</h3>
-              <p className="text-sm text-emerald-600 font-normal">Seeking divine wisdom through sacred dialogue</p>
+              <h3 className="text-xl font-semibold">روحانی رہنما - Spiritual Guide</h3>
+              <p className="text-sm text-emerald-600 font-normal">الٰہی حکمت کی تلاش میں مقدس مکالمہ</p>
             </div>
           </DialogTitle>
         </DialogHeader>
@@ -111,7 +110,7 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
                   {message.sender === 'user' ? (
                     <User className="w-4 h-4 text-white" />
                   ) : (
-                    <Bot className="w-4 h-4 text-white" />
+                    <Crescent className="w-4 h-4 text-white" />
                   )}
                 </div>
                 <Card className={`p-3 ${
@@ -119,7 +118,7 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
                     ? 'bg-gradient-to-br from-cyan-100 to-teal-100 text-cyan-900 border-cyan-200' 
                     : 'bg-white/80 text-emerald-900 border-emerald-200'
                 }`}>
-                  <p className="text-sm leading-relaxed">{message.content}</p>
+                  <p className="text-sm leading-relaxed whitespace-pre-line">{message.content}</p>
                   <span className="text-xs opacity-60 mt-2 block">
                     {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                   </span>
@@ -132,7 +131,7 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
             <div className="flex justify-start">
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-full flex items-center justify-center">
-                  <Bot className="w-4 h-4 text-white" />
+                  <Crescent className="w-4 h-4 text-white" />
                 </div>
                 <Card className="p-3 bg-white/80 border-emerald-200">
                   <div className="flex space-x-1">
@@ -146,14 +145,13 @@ const SpiritualChatbot: React.FC<SpiritualChatbotProps> = ({ isOpen, onClose }) 
           )}
         </div>
 
-        {/* Chat Input */}
         <div className="border-t border-emerald-200 pt-4">
           <div className="flex space-x-3">
             <Input
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyPress={handleKeyPress}
-              placeholder="Ask for spiritual guidance..."
+              placeholder="روحانی رہنمائی کے لیے سوال کریں..."
               className="flex-1 bg-white/70 border-emerald-300 text-emerald-900 placeholder-emerald-600 focus:border-emerald-500 focus:ring-emerald-500/20"
               disabled={isLoading}
             />
