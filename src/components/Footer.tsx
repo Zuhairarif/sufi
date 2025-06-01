@@ -58,17 +58,26 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact */}
+          {/* Professional Contact */}
           <div>
-            <h4 className="text-lg font-semibold text-emerald-800 mb-4">Contact</h4>
+            <h4 className="text-lg font-semibold text-emerald-800 mb-4">Contact Us</h4>
             <div className="space-y-3">
-              <Button
-                onClick={openWhatsApp}
-                className="w-full bg-green-600 hover:bg-green-700 text-white justify-start shadow-md px-3 py-2 text-sm"
-              >
-                <MessageCircle className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">WhatsApp: {whatsappNumber}</span>
-              </Button>
+              <div className="bg-white/60 p-4 rounded-lg border border-emerald-200/50">
+                <h5 className="text-sm font-semibold text-emerald-800 mb-2">Professional Consultation</h5>
+                <Button
+                  onClick={openWhatsApp}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white justify-start shadow-sm text-sm h-auto py-3"
+                >
+                  <MessageCircle className="w-4 h-4 mr-3 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-medium">WhatsApp Support</div>
+                    <div className="text-xs opacity-90">+91 {whatsappNumber}</div>
+                  </div>
+                </Button>
+                <p className="text-xs text-emerald-600 mt-2">
+                  Available for Islamic spiritual guidance and consultation
+                </p>
+              </div>
             </div>
           </div>
         </div>
