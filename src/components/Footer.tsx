@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   const whatsappNumber = "9557407268";
-  const whatsappMessage = "Assalamu Alaikum! I need help with Islamic spiritual guidance";
+  const whatsappMessage = "Assalamu Alaikum! I would like to inquire about Islamic spiritual guidance services";
   
   const openWhatsApp = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -63,19 +63,19 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-emerald-800 mb-4">Contact Us</h4>
             <div className="space-y-3">
               <div className="bg-white/60 p-4 rounded-lg border border-emerald-200/50">
-                <h5 className="text-sm font-semibold text-emerald-800 mb-2">Professional Consultation</h5>
+                <h5 className="text-sm font-semibold text-emerald-800 mb-2">Spiritual Consultation</h5>
                 <Button
                   onClick={openWhatsApp}
                   className="w-full bg-green-600 hover:bg-green-700 text-white justify-start shadow-sm text-sm h-auto py-3"
                 >
                   <MessageCircle className="w-4 h-4 mr-3 flex-shrink-0" />
                   <div className="text-left">
-                    <div className="font-medium">WhatsApp Support</div>
+                    <div className="font-medium">WhatsApp Consultation</div>
                     <div className="text-xs opacity-90">+91 {whatsappNumber}</div>
                   </div>
                 </Button>
                 <p className="text-xs text-emerald-600 mt-2">
-                  Available for Islamic spiritual guidance and consultation
+                  Professional Islamic guidance and spiritual counseling services available
                 </p>
               </div>
             </div>
