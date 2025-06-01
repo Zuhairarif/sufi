@@ -64,10 +64,10 @@ const Footer = () => {
             <div className="space-y-3">
               <Button
                 onClick={openWhatsApp}
-                className="w-full bg-green-600 hover:bg-green-700 text-white justify-start shadow-md"
+                className="w-full bg-green-600 hover:bg-green-700 text-white justify-start shadow-md px-3 py-2 text-sm"
               >
-                <MessageCircle className="w-4 h-4 mr-2" />
-                WhatsApp: {whatsappNumber}
+                <MessageCircle className="w-4 h-4 mr-2 flex-shrink-0" />
+                <span className="truncate">WhatsApp: {whatsappNumber}</span>
               </Button>
             </div>
           </div>
